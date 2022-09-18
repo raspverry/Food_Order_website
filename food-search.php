@@ -20,7 +20,8 @@
             <h2 class="text-center">Food Menu</h2>
 
             <?php
-                $search = $_POST['search'];
+                //mysqli_real_escape_string is protecting from sql injection
+                $search = mysqli_real_escape_string($conn, $_POST['search']);
                 
                 $sql = "SELECT * FROM food_info WHERE title LIKE '%$search%' or description LIKE '%$search%'";
 
