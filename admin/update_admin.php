@@ -63,8 +63,8 @@
 <?php 
     //Process the value from form and save it in DB
     if(isset($_POST['submit'])){
-        $full_name = $_POST['full_name'];
-        $user_name = $_POST['user_name'];
+        $full_name = mysqli_real_escape_string($conn, $_POST['full_name']);
+        $user_name = mysqli_real_escape_string($conn, $_POST['user_name']);
         $id = $_POST['id'];
 
         //echo $full_name . $username. $id;
