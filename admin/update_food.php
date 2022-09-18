@@ -220,7 +220,7 @@
             else{
                 
                 $_SESSION['update'] = "<div class='error'>Failed to update Food</div>";
-                //header('location:'.home_url.'admin/manage_food.php');
+                header('location:'.home_url.'admin/manage_food.php');
 
             }
         }

@@ -22,7 +22,7 @@
 
                         ?>
 
-                        <a href="category-foods.html">
+                        <a href="<?=home_url?>/category-foods.php?category_id=<?=$id?>">
                         <div class="box-3 float-container">
                             <?php
                                 if($image_name ==""){
